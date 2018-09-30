@@ -5,6 +5,7 @@ The format is based on the export output of Tony: a tool for melody transcriptio
 The first column contains time in float seconds while the second column contains a number that will be output by the object at the specified time.
 */
 
+const maxAPI = require("max-api");
 const NS_PER_SEC = 1e9;
 
 const {chain}  = require('stream-chain');
@@ -25,7 +26,7 @@ function playCsv(fileName, playbackSpeed) {
   // CSV file streaming pipeline
   const pipeline = chain([
     fs.createReadStream(fileName),
-    parser({separator: '\t'}),
+    parser({separator: ','}),
     streamValues(),
     async data => {
       const [time, pitch] = data.value;
@@ -47,8 +48,10 @@ function playCsv(fileName, playbackSpeed) {
   var startTime = process.hrtime();
   pipeline.on('data', (d) => {
     // output data from an outlet
-    console.log(d)
+    console.log(d);
+    maxAPI.outlet(d.pitch);
   });
 };
 
-playCsv('./mardin.1.pitch.csv', 1.);
+maxAPI.addHandler("play", playCsv);
+//playCsv('./mardin.1.pitch.csv', 1.);

@@ -6,4 +6,4 @@ Node.js script that can replay csv analysis files generated using Tony in Max8!
 * npm install
 
 ## Tony
-For Tony: a tool for melody transcription, see [the project site]("https://code.soundsoftware.ac.uk/projects/tony")
+For Tony: a tool for melody transcription, see [the project site](https://code.soundsoftware.ac.uk/projects/tony)

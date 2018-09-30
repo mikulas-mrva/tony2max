@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 220.0, 117.0, 790.0, 639.0 ],
+		"rect" : [ 220.0, 117.0, 567.0, 512.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,61 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-25",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 246.0, 89.0, 295.0, 47.0 ],
+					"text" : "please note that playback speeds above 1 can be slower than desired. On the author's machine,\nplayback speed of 10 runs at appx. 7x original speed."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 14.0,
+					"id" : "obj-23",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 12.0, 51.0, 332.0, 22.0 ],
+					"text" : "Reading Tony's melody transcription exports in Max."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 30.0,
+					"id" : "obj-15",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 12.0, 9.0, 153.0, 40.0 ],
+					"text" : "Tony2Max"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 7.5, 116.0, 123.0, 20.0 ],
+					"text" : "play filename speed"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 396.0, 65.0, 31.0, 22.0 ],
+					"patching_rect" : [ 246.0, 141.0, 31.0, 22.0 ],
 					"text" : "stop"
 				}
 
@@ -56,7 +105,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 360.5, 32.0, 29.5, 22.0 ],
+					"patching_rect" : [ 210.5, 108.0, 29.5, 22.0 ],
 					"text" : "1.3"
 				}
 
@@ -68,7 +117,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 322.25, 32.0, 29.5, 22.0 ],
+					"patching_rect" : [ 172.25, 108.0, 29.5, 22.0 ],
 					"text" : "1."
 				}
 
@@ -80,7 +129,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 284.0, 32.0, 29.5, 22.0 ],
+					"patching_rect" : [ 134.0, 108.0, 29.5, 22.0 ],
 					"text" : "0.8"
 				}
 
@@ -92,7 +141,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 284.0, 65.0, 106.0, 22.0 ],
+					"patching_rect" : [ 134.0, 141.0, 106.0, 22.0 ],
 					"text" : "play durme.csv $1"
 				}
 
@@ -104,7 +153,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 65.0, 119.0, 22.0 ],
+					"patching_rect" : [ 63.0, 180.0, 119.0, 22.0 ],
 					"text" : "loadmess script start"
 				}
 
@@ -115,7 +164,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 213.0, 325.0, 45.0, 45.0 ]
+					"patching_rect" : [ 63.0, 401.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -126,7 +175,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 213.0, 195.0, 39.0, 22.0 ],
+					"patching_rect" : [ 63.0, 271.0, 39.0, 22.0 ],
 					"text" : "$1 10"
 				}
 
@@ -138,7 +187,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 213.0, 225.0, 48.0, 22.0 ],
+					"patching_rect" : [ 63.0, 301.0, 48.0, 22.0 ],
 					"text" : "line~ 0."
 				}
 
@@ -150,7 +199,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 213.0, 286.0, 47.0, 22.0 ],
+					"patching_rect" : [ 63.0, 362.0, 47.0, 22.0 ],
 					"text" : "*~ 0.25"
 				}
 
@@ -162,7 +211,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 213.0, 255.0, 50.0, 22.0 ],
+					"patching_rect" : [ 63.0, 331.0, 50.0, 22.0 ],
 					"text" : "saw~ 0."
 				}
 
@@ -174,7 +223,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 213.0, 165.0, 71.0, 22.0 ],
+					"patching_rect" : [ 63.0, 241.0, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -186,7 +235,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 162.0, 65.0, 114.0, 22.0 ],
+					"patching_rect" : [ 7.5, 141.0, 114.0, 22.0 ],
 					"text" : "play example.csv 1."
 				}
 
@@ -198,7 +247,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 213.0, 133.0, 135.0, 22.0 ],
+					"patching_rect" : [ 63.0, 209.0, 135.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,

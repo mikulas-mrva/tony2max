@@ -1,0 +1,19 @@
+{
+  "name": "tony2max",
+  "version": "0.1.0",
+  "description": "Replay csv analysis files generated using Tony in Max8!",
+  "main": "tony2max.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "maxmsp",
+    "max8"
+  ],
+  "author": "Mikulas Mrva",
+  "license": "MIT",
+  "dependencies": {
+    "stream-csv-as-json": "^1.0.1",
+    "stream-json": "^1.1.1"
+  }
+}
